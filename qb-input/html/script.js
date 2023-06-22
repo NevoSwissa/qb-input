@@ -112,9 +112,9 @@ const renderNumberInput = (item) => {
         const { text, name } = item;
         formInputs[name] = item.default ? item.default : "";
         const isRequired = item.isRequired == "true" || item.isRequired ? "required" : "";
-        const defaultValue = item.default ? `value="${item.default}"` : ""
+        const defaultValue = item.default ? `value="${item.default}"` : "";
 
-        return `<input placeholder=${text} type="number" class="form-control" name=${name} ${defaultValue} ${isRequired}/>`;
+        return `<input placeholder='${text}' type='number' class='form-control' name='${name}' ${defaultValue} ${isRequired}/>`;
     } catch (err) {
         console.log(err);
         return "";
