@@ -3,10 +3,14 @@ Simple, clean and modern looking qb-input css edit. To go along with our clean r
 
 Join our Discord server for future updated and more script releases : https://discord.gg/rp6ynCJTKK
 
-Previews : 
+Light Mode :
 
 ![image](https://github.com/NevoSwissa/qb-input/assets/96447671/519ca726-5914-45ac-a88f-e48db95b83c9)
 ![image2](https://github.com/NevoSwissa/qb-input/assets/96447671/f3401906-28ca-4fd0-a5e8-c9d858cfded5)
+
+Dark Mode :
+
+![image3](https://cdn.discordapp.com/attachments/967914093396774942/1128046965448511729/image.png)
 
 # Usage
 
