@@ -1,4 +1,5 @@
 let formInputs = {};
+let darkModeEnabled = false; // Set this variable to true for dark mode, false for default colors
 
 $(document).ready(function () {
     $(".main-wrapper").hide(); 
@@ -24,6 +25,7 @@ const OpenMenu = (data) => {
 
     let showContainer = () => {
         $(".background").fadeIn();
+        $(".main-wrapper").addClass(darkModeEnabled ? "dark-mode" : "");
         $(".main-wrapper").fadeIn();
     };
 

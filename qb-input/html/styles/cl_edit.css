@@ -5,8 +5,22 @@
     --secondary-color: #333333;
     --accent-color: #ffffff;
     --text-color: #030303;
-    --divider-color: #CCCCCC;
+    --divider-and-hover-color: #CCCCCC;
+    --submit-hover: #C1C1C1;
+    --scrollbar-thumb: #C1C1C1;
+    --scrollbar-color: #f7f7f7;
 }
+
+.dark-mode {
+    --primary-color: #333333;
+    --secondary-color: #f2f2f2;
+    --accent-color: #555555;
+    --divider-and-hover-color: #888888;
+    --text-color: #ffffff;
+    --submit-hover: #888888;
+    --scrollbar-thumb: #ffffff;
+    --scrollbar-color: #b4a8a8;
+}  
 
 * {
     padding: 0;
@@ -50,12 +64,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f7f7f7;
+    background: var(--scrollbar-color);
     border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #C1C1C1;
+    background: var(--scrollbar-thumb);
     border-radius: 3px;
 }
 
@@ -79,7 +93,7 @@ body {
 .divider {
     width: 100%;
     height: 1px;
-    background-color: var(--divider-color);
+    background-color: var(--divider-and-hover-color);
     margin: 10px 0;
 }
 
@@ -155,6 +169,7 @@ body {
     font-weight: 400;
     width: 100%;
     text-align: center;
+    color: var(--text-color);
 }
 
 .select-title {
@@ -190,6 +205,10 @@ body {
 
 .form-select:focus-visible {
     outline: none;
+}
+
+.input-group-chk label {
+    color: var(--text-color);
 }
 
 ::placeholder {
@@ -235,9 +254,9 @@ body {
     left: 0;
     right: 0;
     height: 1px; 
-    background-color: var(--divider-color);
+    background-color: var(--divider-and-hover-color);
 }
 
 .btn:hover {
-    background-color: #C1C1C1;
+    background-color: var(--submit-hover);
 }
